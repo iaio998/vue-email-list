@@ -18,16 +18,15 @@
     <!-- link to Font-Family and CSS Files -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Document Title -->
-    <title>Document</title>
+    <title>Mail list</title>
 </head>
 
 <body>
 
     <div id="app">
-        <ul v-if="numbers.length > 9">
-            <li v-for="n in numbers">{{n}}</li>
+        <ul v-if="mails.length === 10">
+            <li v-for="mail in mails">{{mail}}</li>
         </ul>
-        <span>{{word}}</span>
     </div>
 
     <!-- My JS -->
